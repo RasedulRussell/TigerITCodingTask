@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Form</h1>
+<!--/*@thymesVar id="form" type=""*/-->
+<form action="#" th:object="${form}" method="post">
+    <p>FullName: <input type="text" required field="*{fullname}" name="FullName"> </p>
+    <p>PhoneNumber: <input type="text" required field="*{phonenumber}" name="PhoneNumber"> </p>
+    <p>Address: <input type="text" field="*{address}" name="Address"> </p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
+

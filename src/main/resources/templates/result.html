@@ -1,0 +1,48 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Contact List</title>
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+          crossorigin="anonymous" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <h3>Contact List</h3>
+
+    <hr/>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>PHONE</th>
+            <th>ADDRESS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="contact: ${contact}">
+            <!--/*@thymesVar id="serialNumber" type=""*/-->
+            <td th:text="${contact.serialNumber}" />
+            <td th:text="${contact.fullName}" />
+            <td th:text="${contact.phoneNumber}" />
+            <td th:text="${contact.address}" />
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+
+
+<a href="/contact">Add New Contact</a>
+
+</body>
+
+</html>
