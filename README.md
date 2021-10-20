@@ -1,4 +1,4 @@
-# This is a conding Task given By TigerIT
+# This is a Conding Task given By TigerIT
 I use mySql Database
 Entity Name contact. Contains 4 field.
 Entity generation Query
